@@ -14,9 +14,13 @@
         </header>
         <section class="inputs_section">
             <input type="text" name="letters" id="letters" class="input_letters" placeholder="Escreva as letras juntas">
-            <div class="div_numbers_input">
-                <input type="number" name="hidden" id="hidden" class="input_numbers" value=0>
-                <input type="number" name="fake" id="fake" class="input_numbers" value=0>
+            <div class="input_numbers_wrapper">
+                <div class="div_numbers_input right">
+                    <input type="number" name="hidden" id="hidden" class="input_numbers" placeholder="Ocultas">
+                </div>
+                <div class="div_numbers_input left">
+                    <input type="number" name="fake" id="fake" class="input_numbers" placeholder="Falsas">
+                </div>
             </div>
             <button type="submit" id="submit" class="btn_submit">Enviar</button>
         </section>

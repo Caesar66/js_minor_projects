@@ -55,10 +55,10 @@ function showWords(){
     let fletters_i = parseInt(document.getElementById("fake").value, 10);
     let hletters_i = parseInt(document.getElementById("hidden").value, 10);
 
-    if(isNaN(fletters_i)){
+    if(typeof(fletters_i) != Number){
         fletters_i = 0;
     }
-    if(isNaN(hletters_i)){
+    if(typeof(fletters_i) != Number){
         hletters_i = 0;
     }
 

@@ -23,18 +23,34 @@ h1{
     min-width: 250px;
     max-width: 500px;
 
+    text-align:center;
     position: relative;
     margin: auto;
     display: block;
 }
-.div_numbers_input{
-    /*background-color: white;*/
-    display: flex;
-    align-items:center;
-
-    margin: 15px;
+.input_numbers_wrapper{
+    /*margin: 15px;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
 }
-
+.div_numbers_input{
+    margin: 5px 0 5px 0;
+}
+.right{
+    justify-self: end;
+}
+.left{
+    justify-self: start;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
 .input_numbers{
     font: 24px Calibri;
     color: rgb(220, 220, 220);
@@ -44,12 +60,10 @@ h1{
 
     min-height: 50px;
     max-height: 100px;
-    min-width: 30px;
-    max-width: 50px;
+    min-width: 100px;
+    max-width: 160px;
 
-    position: relative;
-    margin: 0 auto;
-    display: flex;
+    text-align:center;
 }
 .btn_submit{
     position: relative;
