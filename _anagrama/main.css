@@ -1,7 +1,71 @@
+body{
+    font: 24px Calibri black;
+    background-color:cadetblue;
+}
+h1{
+    color: rgb(220, 220, 220);
+
+    padding: 25px;
+    margin: auto;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+.input_letters{
+    font: 24px Calibri;
+    color: rgb(220, 220, 220);
+    background-color: black;
+    border: 10px black solid;
+    border-radius: 5px;
+
+    min-height: 50px;
+    max-height: 100px;
+    min-width: 250px;
+    max-width: 500px;
+
+    position: relative;
+    margin: auto;
+    display: block;
+}
+.div_numbers_input{
+    /*background-color: white;*/
+    display: flex;
+    align-items:center;
+
+    margin: 15px;
+}
+
+.input_numbers{
+    font: 24px Calibri;
+    color: rgb(220, 220, 220);
+    background-color: black;
+    border: 10px black solid;
+    border-radius: 5px;
+
+    min-height: 50px;
+    max-height: 100px;
+    min-width: 30px;
+    max-width: 50px;
+
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+}
+.btn_submit{
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
 .word_table{
     border: 1px solid black;
     padding: 5px;
     margin: 10px 0px 10px 0px;
     text-align: left;
     border-collapse: collapse;
+}
+
+#words_found{
+    margin: auto;
+    align-items: center;
 }
