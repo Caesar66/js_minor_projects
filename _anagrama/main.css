@@ -35,7 +35,7 @@ h1{
     grid-gap: 10px;
 }
 .div_numbers_input{
-    margin: 5px 0 5px 0;
+    margin: 15px 0 15px 0;
 }
 .right{
     justify-self: end;
@@ -66,20 +66,41 @@ input[type=number] {
     text-align:center;
 }
 .btn_submit{
+    background-color: black;
+    color:rgb(220, 220, 220);
+    font: 20px Calibri ;
+
+    min-height: 50px;
+    max-height: 100px;
+    min-width: 100px;
+    max-width: 160px;
+
+    border: none;
+    border-radius: 5px;
+
     position: relative;
     margin: auto;
     display: block;
+
+    cursor:pointer;
+}
+.btn_submit:hover{
+    color: rgb(200, 200, 200);
+}
+.btn_submit:active{
+    color: rgb(150, 150, 150);
 }
 
-.word_table{
-    border: 1px solid black;
-    padding: 5px;
-    margin: 10px 0px 10px 0px;
-    text-align: left;
-    border-collapse: collapse;
+.words_table{
+    margin: 25px auto;
+    border: none;
 }
+.words_table tr{
+    margin: 50px;
+}
+.words_table td{
+    text-align: center;
+    font-size: 30px;
 
-#words_found{
-    margin: auto;
-    align-items: center;
+    margin: 50px;
 }

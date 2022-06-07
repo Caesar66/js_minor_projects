@@ -55,10 +55,10 @@ function showWords(){
     let fletters_i = parseInt(document.getElementById("fake").value, 10);
     let hletters_i = parseInt(document.getElementById("hidden").value, 10);
 
-    if(typeof(fletters_i) != Number){
+    if(isNaN(fletters_i)){
         fletters_i = 0;
     }
-    if(typeof(fletters_i) != Number){
+    if(isNaN(fletters_i)){
         hletters_i = 0;
     }
 
@@ -82,32 +82,26 @@ function showWords(){
 }
 
 function setWordSection(word_list){
-    //console.log(word_list);
+    /* Gets an array of arrays: [[word_list_highest_size, word_list],...,[word_list_lowest_size, word_list]]
+       and formats it to put it on a table */
     let new_table = document.createElement("table");
-    //new_table.setAttribute("class","word_table");
-    new_table.className = "word_table";
+    new_table.className = "words_table";
+    
+    for(word_seq of word_list){
+        let table_rows = [document.createElement("tr"), document.createElement("tr")];
 
-    for(let i = -1; i < word_list.length; i++){
-        let new_table_row = document.createElement("tr");
-        let children = [];
+        words_header = document.createElement("td");
+        words_header.appendChild(document.createTextNode("Words with " + word_seq[0].length + " letters:"));
+        table_rows[0].appendChild(words_header);
 
-        if(i == -1){
-            children = [document.createElement("th"), document.createElement("th")];
-            children[0].appendChild(document.createTextNode("Size"));
-            children[1].appendChild(document.createTextNode("List"));
-        }else{
-            children = [document.createElement("td"), document.createElement("td")];
-            children[0].appendChild(document.createTextNode(word_list[i][0].length));
-            children[1].appendChild(document.createTextNode(word_list[i].join(", ")));
+        words_data = document.createElement("td")
+        words_data.appendChild(document.createTextNode(word_seq.join(" ")));
+        table_rows[1].appendChild(words_data);
+
+        for(child of table_rows){
+            new_table.appendChild(child);
         }
-        children[0].className = "word_table";
-        children[1].className = "word_table";
-        new_table_row.appendChild(children[0]);
-        new_table_row.appendChild(children[1]);
-
-        new_table.appendChild(new_table_row);
     }
-
     return new_table;
 }
 
