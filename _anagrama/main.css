@@ -94,6 +94,8 @@ input[type=number] {
 .words_table{
     margin: 25px auto;
     border: none;
+
+    width: 75%;
 }
 .words_table tr{
     margin: 50px;

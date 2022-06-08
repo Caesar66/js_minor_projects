@@ -91,6 +91,7 @@ function setWordSection(word_list){
         let table_rows = [document.createElement("tr"), document.createElement("tr")];
 
         words_header = document.createElement("td");
+        words_header.style.fontWeight = 'bold';
         words_header.appendChild(document.createTextNode("Words with " + word_seq[0].length + " letters:"));
         table_rows[0].appendChild(words_header);
 
