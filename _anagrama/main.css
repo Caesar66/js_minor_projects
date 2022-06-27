@@ -1,0 +1,108 @@
+body{
+    font: 24px Calibri black;
+    background-color:cadetblue;
+}
+h1{
+    color: rgb(220, 220, 220);
+
+    padding: 25px;
+    margin: auto;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+.input_letters{
+    font: 24px Calibri;
+    color: rgb(220, 220, 220);
+    background-color: black;
+    border: 10px black solid;
+    border-radius: 5px;
+
+    min-height: 50px;
+    max-height: 100px;
+    min-width: 250px;
+    max-width: 500px;
+
+    text-align:center;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+.input_numbers_wrapper{
+    /*margin: 15px;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.div_numbers_input{
+    margin: 15px 0 15px 0;
+}
+.right{
+    justify-self: end;
+}
+.left{
+    justify-self: start;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+.input_numbers{
+    font: 24px Calibri;
+    color: rgb(220, 220, 220);
+    background-color: black;
+    border: 10px black solid;
+    border-radius: 5px;
+
+    min-height: 50px;
+    max-height: 100px;
+    min-width: 100px;
+    max-width: 160px;
+
+    text-align:center;
+}
+.btn_submit{
+    background-color: black;
+    color:rgb(220, 220, 220);
+    font: 20px Calibri ;
+
+    min-height: 50px;
+    max-height: 100px;
+    min-width: 100px;
+    max-width: 160px;
+
+    border: none;
+    border-radius: 5px;
+
+    position: relative;
+    margin: auto;
+    display: block;
+
+    cursor:pointer;
+}
+.btn_submit:hover{
+    color: rgb(200, 200, 200);
+}
+.btn_submit:active{
+    color: rgb(150, 150, 150);
+}
+
+.words_table{
+    margin: 25px auto;
+    border: none;
+
+    width: 75%;
+}
+.words_table tr{
+    margin: 50px;
+}
+.words_table td{
+    text-align: center;
+    font-size: 30px;
+
+    margin: 50px;
+}
